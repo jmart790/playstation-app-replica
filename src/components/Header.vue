@@ -20,10 +20,10 @@ name: "Header",
   display: flex;
   background: rgb(25,28,33);
   background: linear-gradient(180deg, $gradient-gray-1 0%, $gradient-gray-2 100%);
-  border-bottom: 2px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55);
 
   &__ctas {
     width: 100%;

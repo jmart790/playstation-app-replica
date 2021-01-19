@@ -1,8 +1,8 @@
 <template>
   <header class="header">
     <div class="header__ctas">
-      <button class="header__cta">💬</button>
-      <button class="header__cta">🙂</button>
+      <button class="header__cta"><span class="icon-bubbles2"></span></button>
+      <button class="header__cta"><span class="icon-users1"></span></button>
     </div>
   </header>
 </template>

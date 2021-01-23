@@ -28,8 +28,8 @@ export default {
 <style lang="scss">
 .footer {
   width: 100%;
-  background: rgb(25,28,33);
-  background: linear-gradient(0deg, $gradient-gray-1 0%, $gradient-gray-2 100%);
+  background: rgba(25, 28, 33, 0.9);
+  background: linear-gradient(0deg, rgba($gradient-gray-1, .9) 0%, rgba($gradient-gray-2, .9) 100%);
   border-top: 1px solid $border-gray;
   border-top-left-radius: 250px 25px;
   border-top-right-radius: 250px 25px;

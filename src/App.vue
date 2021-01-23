@@ -30,12 +30,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   background-color: $app-bg-color;
   color: $app-font-color;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
 
   &__header {
     position: fixed;
     top: 0;
+    z-index: 10;
   }
   &__page {
     padding: 100px $wall-spacing;
@@ -43,6 +45,7 @@ export default {
   &__footer {
     position: fixed;
     bottom: 0;
+    z-index: 10;
   }
 }
 button {

@@ -1,5 +1,10 @@
 // spacing
+$gap: 4px;
+@function gap($num) {
+  @return $gap * $num;
+}
 $wall-spacing: 36px;
+
 
 // colors
 
@@ -8,4 +13,35 @@ $app-font-color:    #F1F1F1;
 $gradient-gray-1:   #191c21;
 $gradient-gray-2:   #283136;
 $border-gray:       #5E6A6F;
-// 
+
+// utilities
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mb-1 {
+  margin-bottom: gap(2);
+}
+.mb-2 {
+  margin-bottom: gap(4);
+}
+
+.flow-auto {
+  overflow: auto;
+}

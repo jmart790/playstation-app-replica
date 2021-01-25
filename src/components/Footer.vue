@@ -2,7 +2,12 @@
   <footer class="footer">
     <nav class="footer__nav">
       <router-link class="footer__link" to="/"><span class="icon-pscontroller"></span></router-link>
-      <router-link class="footer__link" to="/explore"><span class="icon-rocket"></span></router-link>
+      <router-link 
+        class="footer__link" 
+        :class="{'router-link-exact-active': pageLabel === 'Explore'}"
+        to="/explore/blog"
+      ><span class="icon-rocket"/>
+      </router-link>
       <router-link class="footer__link" to="/store"><span class="icon-ps-store"></span></router-link>
       <router-link class="footer__link" to="/library"><span class="icon-ps-library"></span></router-link>
       <router-link class="footer__link" to="/search"><span class="icon-search"></span></router-link>
@@ -18,7 +23,10 @@ export default {
   name: "Footer",
   computed: {
     pageLabel() {
-      const labelVendor = {Home: 'Play', Explore: 'Explore', Store: 'PS Store', Library: 'Game Library', Search: 'Search'}
+      const labelVendor = {
+        Home: 'Play', Explore: 'Explore', Blog: 'Explore', News: "Explore",
+        Store: 'PS Store', Library: 'Game Library', Search: 'Search'
+      }
       return labelVendor[this.$route.name]
     }
   }

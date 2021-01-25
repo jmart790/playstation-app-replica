@@ -126,12 +126,14 @@ export default {
   }
   &__img {
     width: 100%;
+    min-height: 162px;
+    height: 100%;
     margin-top: gap(8);
     margin-bottom: gap(2);
     border-radius: 10px;
     object-fit: cover;
     overflow: hidden;
-    
+    background-color: $gradient-gray-1;
   }
   &__game-title {
     margin-bottom: gap(3);
@@ -171,7 +173,9 @@ export default {
     flex-direction: column;
     align-items: center;
     img {
-      max-width: 50px;
+      width: 50px;
+      min-height: 55px;
+      height: 100%;
       margin-bottom: 4px;
     }
   }

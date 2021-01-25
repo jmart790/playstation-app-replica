@@ -41,7 +41,18 @@ $border-gray:       #5E6A6F;
 .mb-2 {
   margin-bottom: gap(4);
 }
-
+.mt-1 {
+  margin-top: gap(2);
+}
+.mt-2 {
+  margin-top: gap(4);
+}
+.mt-3 {
+  margin-top: gap(6);
+}
+.mt-4 {
+  margin-top: gap(8);
+}
 .flow-auto {
   overflow: auto;
 }

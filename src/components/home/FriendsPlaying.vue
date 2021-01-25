@@ -88,6 +88,7 @@ export default {
       width: 150px;
       object-fit: cover;
       border-radius: 10px;
+      background-color: $gradient-gray-1;
     }
     img:last-of-type {
       position: absolute;
@@ -98,6 +99,7 @@ export default {
       object-fit: cover;
       border: 5px solid $app-bg-color;
       border-radius: 50%;
+      background-color: $gradient-gray-1;
     }
     p:first-of-type {
       position: absolute;

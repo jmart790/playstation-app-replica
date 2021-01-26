@@ -125,7 +125,7 @@ export default {
     align-items: center;
     flex-shrink: 0;
     b {
-      color: #22a5fc;
+      color: $ps-blue;
       white-space: nowrap;
     }
   }

@@ -8,7 +8,12 @@
         to="/explore/blog"
       ><span class="icon-rocket"/>
       </router-link>
-      <router-link class="footer__link" to="/store"><span class="icon-ps-store"></span></router-link>
+      <router-link 
+        class="footer__link" 
+        to="/store/latest"
+        :class="{'router-link-exact-active': pageLabel === 'Store'}"
+      ><span class="icon-ps-store"></span>
+      </router-link>
       <router-link class="footer__link" to="/library"><span class="icon-ps-library"></span></router-link>
       <router-link class="footer__link" to="/search"><span class="icon-search"></span></router-link>
     </nav>
@@ -24,7 +29,8 @@ export default {
   computed: {
     pageLabel() {
       const labelVendor = {
-        Home: 'Play', Explore: 'Explore', Blog: 'Explore', News: "Explore",
+        Home: 'Play', Explore: 'Explore', Latest: 'Store', Collections: 'Store', 
+        Deals: 'Store', PS5: 'Store', Subscriptions: 'Store', Blog: 'Explore', News: "Explore",
         Store: 'PS Store', Library: 'Game Library', Search: 'Search'
       }
       return labelVendor[this.$route.name]

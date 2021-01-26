@@ -30,7 +30,35 @@ const routes = [
   {
     path: '/store',
     name: 'Store',
-    component: () => import(/* webpackChunkName: "store" */ '../views/Store.vue')
+    component: () => import(/* webpackChunkName: "store" */ '../views/Store.vue'),
+    children: [
+      {
+        path: 'latest',
+        name: 'Latest',
+        component: () => import('../components/store/Latest.vue')
+      },
+      {
+        path: 'collections',
+        name: 'Collections',
+        component: () => import('../components/store/Collections.vue')
+      },
+      {
+        path: 'deals',
+        name: 'Deals',
+        component: () => import('../components/store/Deals.vue')
+      },
+      {
+        path: 'ps5',
+        name: 'PS5',
+        component: () => import('../components/store/PS5.vue')
+      },
+      {
+        path: 'subscriptions',
+        name: 'Subscriptions',
+        component: () => import('../components/store/Subscriptions.vue')
+      },
+
+    ]
   },
   {
     path: '/library',
